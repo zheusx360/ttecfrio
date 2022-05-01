@@ -1,8 +1,25 @@
 
 .headerContainer{
   height: 6rem;
-  border-bottom: 1px solid #eee;
-  background: linear-gradient(to bottom,  var(--topColor), var(--bottomColor));
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: 0.8s;
+  background-color: transparent;
+  z-index: 10;
+}
+.headerContainerB{
+  height: 6rem;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  transition: 0.8s;
+  background-color: rgba(0,0,0, 0.45);
 }
 
 .headerContent{
@@ -48,7 +65,6 @@
     }
   }
 }
-
 .readyButton{
   margin-left: auto;
   height: 3rem;
@@ -67,7 +83,6 @@
     filter: brightness(1.1)
   }
 }
-
 
 @media (max-width: 870px){
   .headerContainer{
