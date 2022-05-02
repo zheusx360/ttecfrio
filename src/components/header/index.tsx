@@ -4,6 +4,7 @@ import Image from 'next/image'
 import logo from '../../../public/images/IgluLogo.svg'
 import title from '../../../public/images/LogoMenu.svg'
 import Link from 'next/link'
+import { NavbarAnimated } from '../navBarAnimated/navbar'
 
 export function Header(){
   const [theme, setTheme] = useState(1)
@@ -29,20 +30,9 @@ export function Header(){
             <a>
               <Image src={title} width={310} alt="TTECFRIO"/>
             </a>
-            <nav>
-              <Link href='/'>
-                <a>Home</a>
-              </Link>
-              <Link href='/servicos'>
-                <a>Serviços</a>
-              </Link>
-              <Link href='/quemsomos'>
-                <a>Quem somos</a>
-              </Link>
-              <Link href='/constatos'>
-                <a>Contatos</a>
-              </Link>
-            </nav>
+            <a>
+              <NavbarAnimated marginLeft={40}/>
+            </a>
          </div>
          </div>
       </header>

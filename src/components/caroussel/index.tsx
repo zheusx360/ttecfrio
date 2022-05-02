@@ -9,6 +9,10 @@ export function Carossel(){
   const [theme, setTheme] = useState(styles.customImage)
   const [indice, setIndice] = useState(true)
 
+  useEffect(()=>{
+    ResetValues()
+  },[])
+
   const ResetValues = () =>{
       let i = !indice
       setIndice(i)
@@ -27,7 +31,7 @@ export function Carossel(){
   <Carousel.Item className={theme}>
     <div className="unset-img full-bleed">
     <Image
-      src="/images/ImagesCarousel/img01.jpg"
+      src="/images/ImagesCarousel/imagem1.jpg"
       layout='fill'
       alt="First slide"
     />
@@ -40,7 +44,7 @@ export function Carossel(){
   <Carousel.Item className={theme}>
     <div className="unset-img full-bleed">
     <Image
-      src="/images/ImagesCarousel/img02.jpg"
+      src="/images/ImagesCarousel/imagem2.jpg"
       layout='fill'
       alt="Second slide"
     />
@@ -54,7 +58,7 @@ export function Carossel(){
   <Carousel.Item className={theme}>
     <div className="unset-img full-bleed">
     <Image
-      src="/images/ImagesCarousel/img05.jpg"
+      src="/images/ImagesCarousel/imagem3.jpg"
       layout='fill'
       alt="Second slide"
     />
@@ -63,6 +67,20 @@ export function Carossel(){
     <Carousel.Caption>
       <h3>A mais de 10 anos no mercado</h3>
       <p>Confie em quem está a mais de 10 anos no mercado sempre oferecendo o melhor para seus clientes.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item className={theme}>
+    <div className="unset-img full-bleed">
+    <Image
+      src="/images/ImagesCarousel/imagem4.jpg"
+      layout='fill'
+      alt="Second slide"
+    />
+    </div>
+
+    <Carousel.Caption>
+      <h3>A saúde do seu negócio sempre em segurança</h3>
+      <p>Uma equipe a disposição sempre que seu negócio precisar de um socorro.</p>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>

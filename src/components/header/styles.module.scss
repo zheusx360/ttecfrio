@@ -8,7 +8,7 @@
   left: 0;
   right: 0;
   transition: 0.8s;
-  background-color: rgba(0,0,0, 0.3);
+  background-color: rgba(61, 99, 155, 0.92);
   z-index: 10;
 }
 .headerContainerB{
@@ -53,15 +53,20 @@
       font-weight: 700;
       transition: color 0.4s;
       text-decoration: none;
+      border-top: 1px solid transparent;
+      border-bottom: 1px solid transparent;
+      border-radius: 6px;
 
       & + a {
-        margin-left: 2rem;
+        margin-left: 3rem;
       }
 
       &:hover{
         color: #89b1ed;
-        border-radius: 25px;
         height: 6rem;
+        border-radius: px;
+        border-top: 1px solid #89b1ed;
+        border-bottom: 1px solid #89b1ed;
       }
 
       &.active{
