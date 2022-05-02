@@ -8,8 +8,6 @@ function MyApp({ Component, pageProps }: AppProps) {
   <>
     <Header/>
     <Carossel/>
-    <Carossel/>
-    <Carossel/>
     <Component {...pageProps} />
   </>
   )

@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import styles from './styles.module.scss'
 import Image from 'next/image'
 import logo from '../../../public/images/IgluLogo.svg'
@@ -11,9 +11,9 @@ export function Header(){
     const handleScroll = () =>{
       const show = window.scrollY > 100
       if(show){
-        setTheme(1)
-      }else{
         setTheme(2)
+      }else{
+        setTheme(1)
       }
     }
     document.addEventListener('scroll', handleScroll)
@@ -23,7 +23,7 @@ export function Header(){
   }, [])
 
    return(
-      <header id="navbar" className={`${theme === 1 ? styles.headerContainerB : styles.headerContainer}`}>
+      <header id="navbar" className={`${theme === 2 ? styles.headerContainerB : styles.headerContainer}`}>
         <div className="nav-scrolled">
          <div className={styles.headerContent}>
             <a>

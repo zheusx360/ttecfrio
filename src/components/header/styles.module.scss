@@ -1,17 +1,19 @@
 
 .headerContainer{
-  height: 6rem;
+  height: 6.8rem;
+  padding-top: 10px;
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   transition: 0.8s;
-  background-color: transparent;
+  background-color: rgba(0,0,0, 0.3);
   z-index: 10;
 }
 .headerContainerB{
-  height: 6rem;
+  height: 6.8rem;
+  padding-top: 10px;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -19,7 +21,7 @@
   right: 0;
   z-index: 10;
   transition: 0.8s;
-  background-color: rgba(0,0,0, 0.45);
+  background-color: rgba(0,0,0, 0.5);
 }
 
 .headerContent{
@@ -44,17 +46,22 @@
       display: inline-block;
       position: relative;
       padding: 0 0.5rem;
+      font-size: 1.3rem;
       height: 6rem;
       line-height: 6rem;
-      color: #fff;
+      color: #fFF;
+      font-weight: 700;
       transition: color 0.4s;
+      text-decoration: none;
 
       & + a {
         margin-left: 2rem;
       }
 
       &:hover{
-        color: #2288;
+        color: #89b1ed;
+        border-radius: 25px;
+        height: 6rem;
       }
 
       &.active{
@@ -86,21 +93,30 @@
 
 @media (max-width: 870px){
   .headerContainer{
+    transition: 0.8s;
+    height: 13rem;
+    padding: 0.5rem 0;
+  }
+  .headerContainerB{
+    transition: 0.8s;
     height: 13rem;
     padding: 0.5rem 0;
   }
 
   .headerContent{
+    transition: 0.8s;
     display: flex;
     flex-direction: column;
 
     nav{
+      transition: 0.8s;
       display: block;
       margin-left: auto;
       margin-right: auto;
     }
 
     .readyButton{
+      transition: 0.8s;
       display: none;
     }
   }
