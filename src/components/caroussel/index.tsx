@@ -3,13 +3,19 @@ import '@coreui/coreui/dist/css/coreui.min.css'
 import Carousel from 'react-bootstrap/Carousel'
 import Image from 'next/image'
 import styles from './carousel.module.scss'
+import feather from 'feather-icons'
 
 
 export function Carossel(){
   const [theme, setTheme] = useState(styles.customImage)
   const [indice, setIndice] = useState(true)
 
+  const nextIcon = <span aria-hidden="true" className="carousel-control-next-icon" />
+
+  const prevIcon = <span className={styles.spanStyle}>Anterior</span>
+
   useEffect(()=>{
+    setIndice(!indice)
     ResetValues()
   },[])
 
@@ -27,7 +33,9 @@ export function Carossel(){
 
 
   return(
-  <Carousel fade interval={6000} pause={false} indicators={false} onSelect={() => ResetValues()}>
+    <>
+
+    <Carousel fade interval={6000} nextIcon={nextIcon} prevIcon={prevIcon} pause={false} indicators={false} onSelect={() => ResetValues()}>
   <Carousel.Item className={theme}>
     <div className="unset-img full-bleed">
     <Image
@@ -84,7 +92,15 @@ export function Carossel(){
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
-
+<div className={styles.spanStyle}>
+  <span aria-hidden="true" className="carousel-control-next-icon" />
+</div>
+</>
   )
 
+
 }
+
+
+
+

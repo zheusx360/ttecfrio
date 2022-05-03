@@ -1,16 +1,15 @@
 import { AppProps } from 'next/app'
 import '../styles/global.scss'
-import { Header, Carossel } from '../components'
-import { Button } from '../components/buttons/animatedButton'
-import { NavbarAnimated } from '../components/navBarAnimated/navbar'
+import { Header} from '../components'
+import Footer from '../components/footer/footer'
 
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
   <>
     <Header/>
-    <Carossel/>
     <Component {...pageProps} />
+    <Footer/>
   </>
   )
 }
