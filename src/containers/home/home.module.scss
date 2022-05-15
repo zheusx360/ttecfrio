@@ -1,0 +1,16 @@
+.section{
+  max-width: 1120px;
+  min-width: 348px;
+  height: 40rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  p{
+    font-size: 18px;
+    font-weight: 600;
+  }
+}

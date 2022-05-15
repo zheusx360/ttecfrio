@@ -1,11 +1,3 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Carossel } from '../components'
+import { Home } from "../containers/home";
 
-export default function Home() {
-  return (
-    <div>
-      <Carossel/>
-    </div>
-  )
-}
+export default Home;

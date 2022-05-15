@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import styles from './styles.module.scss'
 import Image from 'next/image'
-import logo from '../../../public/images/IgluLogo.svg'
 import title from '../../../public/images/LogoMenu.svg'
-import Link from 'next/link'
 import { NavbarAnimated } from '../navBarAnimated/navbar'
 
 export function Header(){
