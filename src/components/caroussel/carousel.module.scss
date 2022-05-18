@@ -15,6 +15,8 @@
   transform: scale(1,1);
 }
 .infoStyle{
+  transform: translate(0, 100px);
+  filter: opacity(0) brightness(1);
   span{
     font-size: 2.3rem;
     font-weight: 500;
@@ -26,8 +28,15 @@
     font-weight: 500;
   }
   border-radius: 12px;
-
+  animation: animation 4s cubic-bezier(.05,.67,0,1.2) forwards;
 }
+
+@keyframes animation{
+  from{transform: translate(0, 100px); filter: opacity(0) brightness(2);}
+  to{transform: translate(0, 0px); filter: opacity(100%) brightness(1);}
+}
+
+
 .infoStyle :hover{
   transition: 500ms;
   font-weight: 600;
