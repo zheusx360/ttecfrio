@@ -7,6 +7,13 @@
 	max-width: 1000px;
 	justify-content: space-between;
 	text-align: center;
+
+  @media (max-width: 500px){
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+  }
+
 }
 .li {
 	padding: 1rem 2rem 1.15rem;
@@ -15,6 +22,12 @@
   color: #ebebeb;
 	min-width: 80px;
 	margin: auto;
+
+  @media (max-width: 500px){
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
 }
 
 .li:hover {

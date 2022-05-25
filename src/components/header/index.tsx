@@ -30,7 +30,7 @@ export function Header(){
             <Image src={title} width={310} alt="TTECFRIO"/>
           </a>
           <a>
-            <NavbarAnimated marginLeft={40}/>
+            <NavbarAnimated closeVisible={() => {}} marginLeft={40}/>
           </a>
        </div>
        </div>

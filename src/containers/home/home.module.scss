@@ -15,10 +15,6 @@
     font-weight: 600;
   }
 
-  @media (max-width: px){
-    height: auto;
-  }
-
   @media (max-width: 730px){
     height: auto;
     p{
@@ -34,6 +30,7 @@
   border-radius: 6px;
   margin: 2rem;
   transition: .5s;
+  background-color: bisque;
 
   &:hover{
     filter: drop-shadow(0px 10px 4px rgba(50, 50, 50, .5));
@@ -50,6 +47,7 @@
       border-radius: 23px;
     }
   }
+
 }
 .contentText{
   display: flex;
@@ -114,9 +112,12 @@
   @media (max-width: 700px){
     height: 47rem;
   }
+  @media (max-width: 617px){
+    height: 52rem;
+  }
 
-  @media (max-width: 330px){
-    height: 42rem;
+  @media (max-width: 362px){
+    height: 57rem;
   }
 
 
@@ -167,7 +168,6 @@
     width: 100%;
     span{
       margin-top: 2rem;
-
     }
   }
 
@@ -198,6 +198,10 @@
 
   button{
     margin-top: 35px;
+  }
+
+  @media (max-width: 652px){
+     width: 90%;
   }
 
 }
