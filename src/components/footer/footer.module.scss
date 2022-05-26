@@ -13,6 +13,14 @@
     font-size: 1rem;
     color: white;
   }
+
+  @media (max-width: 730px){
+    height: auto;
+    p{
+      font-size: 1rem;
+    }
+  }
+
 }
 
 .textContent{
@@ -29,6 +37,16 @@
     color: aliceblue;
     font-weight: 600;
   }
+
+  @media (max-width: 889px){
+    margin-top: 18px;
+    width: 45%;
+  }
+  @media (max-width: 731px){
+    width: 90%;
+    height: auto;
+  }
+
 }
 
 .imagem{

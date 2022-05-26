@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import styles from './styles.module.scss'
 import Image from 'next/image'
-import icon from '../../../public/images/imagesPng/IgluIcon.png'
-import texto from '../../../public/images/imagesPng/TextoTTEC.png'
+import icon from '../../../public/images/imagesPng/IgluIcon.svg'
+import texto from '../../../public/images/imagesPng/TitleLogo.svg'
 import { NavbarAnimated } from '../navBarAnimated/navbar'
 import { BsJustifyRight, BsXLg } from 'react-icons/bs';
 
@@ -43,7 +43,7 @@ export function HeaderMobile(){
     <div className={`${theme === 2 ? styles.headerContainerB : styles.headerContainer}`} hidden={!closeMenu}>
       <div className={styles.content}>
         <div className={styles.icone}>
-          <Image src={icon} width={55} height={50} alt="Icon"/>
+          <Image src={icon} width={60} height={55} alt="Icon"/>
         </div>
         <div className={styles.center}>
           <Image src={texto} width={140} height={58} alt="Icon"/>

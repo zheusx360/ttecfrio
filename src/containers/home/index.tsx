@@ -8,7 +8,8 @@ export function Home() {
     <div>
       <Carossel/>
       <div className={styles.section}>
-        <div className={styles.column}>
+
+      <div className={styles.column}>
           <div className={styles.row}>
             <div className={styles.content}>
               <Image src="/images/ImagesCarousel/satisfacao.jpg" alt="Satisfação" width={500} height={500}/>
@@ -22,7 +23,7 @@ export function Home() {
                 <p>&bull; Suporte técnico 24 horas</p>
             </div>
           </div>
-          <div className={styles.row}>
+          <div className={styles.row2}>
               <div className={styles.contentText}>
                 <span>Equipe técnica especializada</span><br/>
                 <p>Contamos com uma equipe altamente especializada, estamos sempre buscando o que existe de melhor e mais técnologico no mercado, para oferecer sempre um serviço de ponta e atualizado.</p>
@@ -35,6 +36,7 @@ export function Home() {
             </div>
           </div>
         </div>
+
       </div>
       <div className={styles.sectionContainer}>
         <section className={styles.sectionTop}>
