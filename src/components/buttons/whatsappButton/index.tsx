@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export function WhatsAppButton(){
 
-  let url = 'https://api.whatsapp.com/send?phone=5511966558858&text=Ol%C3%A1!%20gostaria%20de%20informa%C3%A7%C3%B5es'
+  let url = 'https://api.whatsapp.com/send?phone=5511946458365&text=Ol%C3%A1!%20gostaria%20de%20informa%C3%A7%C3%B5es'
 
   return(
     <div className={styles.main}>
@@ -11,5 +11,4 @@ export function WhatsAppButton(){
       <Link href={url}>{<a target='_blank'><div className={styles.container}></div></a>}</Link>
     </div>
   )
-
 }

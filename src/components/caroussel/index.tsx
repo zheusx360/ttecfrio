@@ -68,8 +68,8 @@ export function Carossel(){
       />
       </div>
       <Carousel.Caption className={styles.infoStyle}>
-        <span>A mais de 25 anos no mercado</span>
-        <p>Confie em quem está a mais de duas décadas no mercado sempre oferecendo o melhor para seus clientes.</p>
+        <span>A quase 10 anos no mercado</span>
+        <p>Confie em quem tem experiência no mercado e sempre oferece o melhor para seus clientes.</p>
       </Carousel.Caption>
     </Carousel.Item>
     <Carousel.Item className={theme}>
