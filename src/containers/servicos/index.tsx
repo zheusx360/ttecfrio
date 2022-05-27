@@ -1,10 +1,19 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Icon from '../../../public/images/IconIgluCircle.svg'
+import style from './servicos.module.scss'
 
 export function Servicos() {
   return (
-    <div style={{display: 'flex', justifyContent:'center', alignItems:'center', width: '100%', height:'100vh', backgroundColor:'#aaa2f3'}}>
-      <h1>Tela de Serviços</h1>
+    <div className={style.container}>
+      <div className={style.leftContent}>
+        <div className={style.iconContent}>
+          <Image src={Icon} width={145} height={145} alt="TTECFRIO"/>
+        </div>
+        <span>SOLICITE UM ORÇAMENTO CONOSCO</span>
+        <p>Preencha os dados do formulário e receba um super desconto em nossos serviços para sua casa ou empresa, com a TTEC FRIO você sempre ganha!</p>
+      </div>
+      <div className={style.rightContent}></div>
     </div>
   )
 }

@@ -18,8 +18,8 @@ export function NavbarAnimated({marginLeft = 5, closeVisible}){
       <ul className={styles.ul}>
 	       <li className={styles.li} onClick={()=> Navigation('./')}>Home</li>
 	       <li className={styles.li} onClick={()=> Navigation('./servicos')}>Serviços</li>
-	       <li className={styles.li} onClick={()=> Navigation('./quemsomos')}>Quem somos</li>
-	       <li className={styles.li} onClick={()=> Navigation('./contatos')}>Contatos</li>
+	       {/* <li className={styles.li} onClick={()=> Navigation('./quemsomos')}>Quem somos</li> */}
+	       <li className={styles.li} onClick={()=> Navigation('./contatos')}>Orçamento</li>
       </ul>
     </div>
 
