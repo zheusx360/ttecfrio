@@ -3,7 +3,7 @@ import styles from './styles.module.scss'
 import Image from 'next/image'
 import title from '../../../public/images/LogoMenu.svg'
 import { NavbarAnimated } from '../navBarAnimated/navbar'
-import { isMobile } from 'react-device-detect'
+import Router from "next/router"
 
 export function Header(){
   const [theme, setTheme] = useState(1)
@@ -27,7 +27,7 @@ export function Header(){
       <div className="nav-scrolled">
        <div className={styles.headerContent}>
           <a>
-            <Image src={title} width={310} alt="TTECFRIO"/>
+            <Image onClick={() => Router.push('/')} src={title} width={310} alt="TTECFRIO"/>
           </a>
           <a>
             <NavbarAnimated closeVisible={() => {}} marginLeft={40}/>

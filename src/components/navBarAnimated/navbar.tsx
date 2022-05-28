@@ -17,9 +17,9 @@ export function NavbarAnimated({marginLeft = 5, closeVisible}){
     <div style={{marginLeft: marginLeft}}>
       <ul className={styles.ul}>
 	       <li className={styles.li} onClick={()=> Navigation('./')}>Home</li>
+	       <li className={styles.li} onClick={()=> Navigation('./orcamento')}>Orçamento</li>
 	       <li className={styles.li} onClick={()=> Navigation('./servicos')}>Serviços</li>
 	       {/* <li className={styles.li} onClick={()=> Navigation('./quemsomos')}>Quem somos</li> */}
-	       <li className={styles.li} onClick={()=> Navigation('./contatos')}>Orçamento</li>
       </ul>
     </div>
 

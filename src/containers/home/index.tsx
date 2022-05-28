@@ -2,6 +2,7 @@ import { Carossel } from '../../components'
 import styles from './home.module.scss'
 import Image from 'next/image'
 import { Button } from '../../components/buttons/animatedButton'
+import Router from "next/router"
 
 export function Home() {
   return (
@@ -50,7 +51,7 @@ export function Home() {
                 <span>
                   Estamos preparados com o que há de melhor no mercado para entregar o serviço desejado com muita qualidade e agilidade, garantindo assim a melhor entrega no menor prazo. solicite um orçamento e se surpreenda com o que temos para te oferecer.
                   <div>
-                    <Button type={5} text={"SOLICITAR ORÇAMENTO"} />
+                    <Button type={5} text={"SOLICITAR ORÇAMENTO"} onClick={() => Router.push('/orcamento')}/>
                   </div>
                 </span>
               </div>
