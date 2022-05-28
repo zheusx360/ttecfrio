@@ -9,6 +9,9 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
   <>
+    <header>
+      <title>TTEC FRIO - Câmaras frigoríficas</title>
+    </header>
     <WhatsAppButton/>
     <Header/>
     <HeaderMobile/>

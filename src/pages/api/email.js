@@ -7,14 +7,14 @@ export default async function sendEmail(req, res) {
     service: 'Gmail',
     secure: true,
     auth: {
-      user: 'redefinirsenhacontrolbase@gmail.com',
-      pass:  process.env.MAIL_PASSWORD
+      user: 'ttec.orcamento@gmail.com',
+      pass:  'ttec@2022'
     }
   });
 
   await transporter.sendMail({
-    from: 'solicitacaoorcamento@gmail.com',
-    to: 'api.cadastro.micro@gmail.com',
+    from: 'ttec.orcamento@gmail.com',
+    to: 'ttec.orcamento@gmail.com',
     subject: 'Nova solicitação de orçamento',
     text: '',
     html: `<h3>Nome: ${req.body.nome}</h3></br><h3>Telefone: ${req.body.fone}</h3></br><h3>Email: ${req.body.email}</h3></br><h3>${req.body.data}</h3></br><h3>Mensagem: </h3></br><h3>${req.body.text}</h3>`
