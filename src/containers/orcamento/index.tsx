@@ -7,6 +7,7 @@ import { BsFileText } from 'react-icons/bs';
 import { Button } from '../../components/buttons/animatedButton'
 import dayjs from 'dayjs'
 import IconsAnimated from '../../components/IconsAnimated'
+import api from '../../pages/api/baseUrl'
 
 export function Orcamento() {
   const [nome, setName] = useState('')
@@ -45,18 +46,12 @@ export function Orcamento() {
   const sendEmail = () => {
     if (verificaCampos()) {
       setLoading(true)
-      fetch('/api/email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
+      api.post('/ttecSend', {
           nome,
           fone,
           email,
           text,
           data
-        })
       }).then((response) => {
         setLoading(false)
         setTxtSend('Email enviado com sucesso! Aguarde nosso contato.')
