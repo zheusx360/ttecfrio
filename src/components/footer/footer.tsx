@@ -6,7 +6,7 @@ export default function Footer() {
     <div className={styles.footerContainer}>
       <div className={styles.textContent}>
         <p>TTEC FRIO - CÂMARAS FRIGORÍFICAS</p>
-        <p>Fale conosco pelo Whatsapp</p>
+        <p>Fale conosco pelo Whatsapp.</p>
         <span>
           <div className={styles.imagem}>
             <Image src={"/images/imagesPng/whatsApp.png"} alt={'WhatsApp'} width={25} height={25}/>
