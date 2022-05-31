@@ -18,7 +18,7 @@
   justify-content: center;
   align-items: center;
 
-  span{
+  header{
     margin-top: 2px;
     margin-bottom: 22px;
     font-size: 2.3rem;
@@ -108,6 +108,14 @@
   padding: 0 5% 0 5%;
 
   p{
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+  h1{
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+  h2{
     font-size: 1.4rem;
     font-weight: 700;
   }
